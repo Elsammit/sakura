@@ -1,0 +1,138 @@
+html,body{
+    overflow-x:hidden;
+}
+
+body{
+    background-image: url(image/bg_namikimichi1_sakura.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hana{
+    position:absolute;
+    height:0;
+    width:0;
+    border: 10px solid pink;
+    border-radius:15px;
+    border-top-right-radius:0;
+    border-bottom-left-radius:0;
+}
+.hana::after{
+	content:"";
+	display:block;
+	position:absolute;
+	top:-7px;
+	left:-7px;
+	height:0;
+	width:0;
+	border: 10px solid pink;
+	border-radius: 15px;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	-webkit-transform: rotate(15deg);
+	-ms-transform: rotate(15deg);
+	transform: rotate(15deg);
+}
+
+.type1{
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border-color:#ffecf7;
+    animation:v1 6s infinite;
+}
+
+.type2{
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+    border-color:#ffdbf0;
+    animation:v2 6s infinite;
+}
+
+.type3{
+    -webkit-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+    border-color:#febae2;
+    animation:v3 5s infinite;
+}
+
+.type4{
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border-color:#fea9db;
+    animation:v4 5s infinite;
+}
+
+.type5{
+    -webkit-transform: rotate(240deg);
+    -ms-transform: rotate(240deg);
+    transform: rotate(240deg);
+    border-color:#fd77c6;
+    animation:v5 4s infinite;
+}
+
+.type6{
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border-color:#fd66bf;
+    animation:v6 4s infinite;
+}
+
+.type1::after{
+    border-color:#ffecf7;
+}
+
+.type2::after{
+    border-color:#ffdbf0;
+}
+
+.type3::after{
+    border-color:#febae2;
+}
+
+.type4::after{
+    border-color:#fea9db;
+}
+
+.type5::after{
+    border-color:#fd77c6;
+}
+
+.type6::after{
+    border-color:#fd66bf;
+}
+
+@keyframes v1{
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(270deg);}
+	100%{transform: rotate(1deg);}
+}
+@keyframes v2{
+	0%{transform: rotate(-90deg);}
+	50%{transform: rotate(-360deg);}
+	100%{transform: rotate(-89deg);}
+}
+@keyframes v3{
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(270deg);}
+	100%{transform: rotate(1deg);}
+}
+@keyframes v4{
+	0%{transform: rotate(-90deg);}
+	50%{transform: rotate(-360deg);}
+	100%{transform: rotate(-89deg);}
+}
+@keyframes v5{
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(270deg);}
+	100%{transform: rotate(1deg);}
+}
+@keyframes v6{
+	0%{transform: rotate(-90deg);}
+	50%{transform: rotate(-360deg);}
+	100%{transform: rotate(-89deg);}
+}
